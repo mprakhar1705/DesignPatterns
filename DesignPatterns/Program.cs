@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.src.OopPrinciples.Abstraction;
 using DesignPatterns.src.OopPrinciples.Encapsulation;
+using DesignPatterns.src.OopPrinciples.Inheritance;
 
 // Encapsulation
 /*
@@ -14,5 +15,15 @@ Console.WriteLine(account.GetBalance());
 */
 
 // Abstraction
-EmailService emailService = new EmailService();
+
+/*EmailService emailService = new EmailService();
 emailService.SendEmail();
+*/
+
+// Inheritance
+Car car = new Car();
+car.Brand = "Tata";
+car.Start();
+car.Stop();
+
+car.NumberOfDoors = 4;

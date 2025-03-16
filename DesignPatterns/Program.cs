@@ -1,8 +1,9 @@
-﻿using DesignPatterns.src.OopPrinciples.Abstraction;
+﻿using DesignPatterns.src.Composition;
+using DesignPatterns.src.OopPrinciples.Abstraction;
 using DesignPatterns.src.OopPrinciples.Coupling;
 using DesignPatterns.src.OopPrinciples.Encapsulation;
 //using DesignPatterns.src.OopPrinciples.Inheritance;
-using DesignPatterns.src.OopPrinciples.Polymorphism;
+//using DesignPatterns.src.OopPrinciples.Polymorphism;
 
 // ENCAPSULATION
 /*
@@ -49,7 +50,14 @@ foreach (var vehicle in vehicles)
 
 //Coupling
 
+/*
 //Order order = new Order(new EmailSender());
 Order order = new Order(new SmsSender());
 
 order.PlaceOrder();
+*/
+
+// COMPOSITION
+
+Car car = new Car();
+car.Start();
